@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Class Monitor Voting</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    .container {
+      max-width: 400px;
+      margin: auto;
+    }
+    .results {
+      margin-top: 20px;
+    }
+    .result-item {
+      margin: 10px 0;
+    }
+    .voter-list {
+      margin-left: 20px;
+      margin-top: 5px;
+    }
+    /* .voter-list-item {
+      display: flex;
+      justify-content: space-between;
+      margin: 5px 0;
+    } */
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Vote for Your Class Monitor</h1>
+    <label for="username">Your Name:</label>
+    <input type="text" id="username" placeholder="Enter your name" />
+    <br /><br />
+    <label for="vote">Vote for:</label>
+    <select id="vote">
+      <option value="Suresh">Suresh</option>
+      <option value="Deepank">Deepank</option>
+      <option value="Abhik">Abhik</option>
+    </select>
+    <br /><br />
+    <button id="voteButton">Vote</button>
+
+    <div class="results">
+      <h2>Results</h2>
+      <p>Total Votes: <span id="totalVotes">0</span></p>
+      <div id="specificResults">
+        <div class="result-item">
+          Suresh: <span id="votesSuresh">0</span>
+          <div class="voter-list" id="votersSuresh"></div>
+        </div>
+        <div class="result-item">
+          Deepank: <span id="votesDeepank">0</span>
+          <div class="voter-list" id="votersDeepank"></div>
+        </div>
+        <div class="result-item">
+          Abhik: <span id="votesAbhik">0</span>
+          <div class="voter-list" id="votersAbhik"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
