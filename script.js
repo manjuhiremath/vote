@@ -105,7 +105,6 @@ document.getElementById("voteButton").addEventListener("click", async () => {
 
     document.getElementById("username").value = "";
 
-    alert(`Thank you, ${username}, for voting for ${selectedCandidate}!`);
 });
 
 fetchVotes();
